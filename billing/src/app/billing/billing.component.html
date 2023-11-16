@@ -1,0 +1,31 @@
+
+  <!-- Highlight Card -->
+  <!-- <div class="card highlight-card card-small">
+
+    <span>Billing Application</span>
+
+  </div> -->
+
+  <div>
+    <input type="text" placeholder="Search" />
+    
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Account Number</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of filteredData">
+          <td>{{ row.id }}</td>
+          <td>{{ row.name }}</td>
+          <td>{{ row.AccountNumber }}</td>
+          <td>{{ row.status }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
